@@ -1,0 +1,117 @@
+.pricing {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+  min-height: 100vh;
+}
+
+.pricing-title {
+  text-align: center;
+  color: #333 !important;
+  margin-bottom: 10px !important;
+  font-weight: 700 !important;
+}
+
+.pricing-subtitle {
+  text-align: center;
+  color: #666 !important;
+  margin-bottom: 40px !important;
+}
+
+.pricing-cards {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricing-card {
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+  border-radius: 15px !important;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.pricing-card.featured {
+  border: 2px solid #00c9a7 !important;
+  transform: scale(1.05);
+}
+
+.pricing-card.featured:hover {
+  transform: scale(1.05) translateY(-5px);
+}
+
+.plan-title {
+  color: #333 !important;
+  font-weight: 600 !important;
+  margin-bottom: 20px !important;
+}
+
+.plan-price {
+  color: #00c9a7 !important;
+  font-weight: 700 !important;
+  margin-bottom: 30px !important;
+}
+
+.plan-price small {
+  font-size: 1rem;
+  color: #666;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  text-align: left;
+}
+
+.plan-features li {
+  padding: 10px 0;
+  color: #666;
+  border-bottom: 1px solid #eee;
+}
+
+.plan-features li:last-child {
+  border-bottom: none;
+}
+
+.plan-button {
+  background-color: #00c9a7 !important;
+  color: white !important;
+  padding: 12px 30px !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  transition: background-color 0.3s ease !important;
+  width: 100%;
+}
+
+.plan-button:hover {
+  background-color: #009688 !important;
+}
+
+@media (max-width: 768px) {
+  .pricing {
+    padding: 40px 20px;
+  }
+  
+  .pricing-title {
+    font-size: 2rem !important;
+  }
+  
+  .pricing-subtitle {
+    font-size: 1.1rem !important;
+  }
+  
+  .pricing-card.featured {
+    transform: none;
+  }
+  
+  .pricing-card.featured:hover {
+    transform: translateY(-5px);
+  }
+}
